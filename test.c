@@ -27,7 +27,6 @@ int main(void)
 	// set black parts
 	// these are outside of the frame (as the aspect ratio doesn't match exactly)
 	for (int y = 0; y < HEIGHT; y++) {
-		BLACK(0, y);
 		BLACK(WIDTH - 1, y);
 	}
 
