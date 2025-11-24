@@ -1,13 +1,3 @@
-# requirements:
-# - a linux desktop
-# - ffmpeg
-# - clang
-# - pip install ffmpeg-python
-# - pip install pillow
-#
-# usage: python extract-frames.py [bad apple mp4]
-# all frames will be outputted into a frames/ directory
-
 import glob
 import os
 import sys
@@ -99,7 +89,6 @@ int main(void)
         text=True
     ).stdout)
     # i am running it
-    # grep for nicer output and so you don't have to scroll to screenshot
     print(subprocess.run(
         f"bash -c ./{frame.replace('.png', '')} 2>&1 > /dev/null | grep 0x --color=never | grep --color=always f7",
         shell=True,
